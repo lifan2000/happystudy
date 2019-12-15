@@ -1,123 +1,161 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>该拼写啦</title>
-		<link rel="stylesheet" type="text/css" href="./style/css/login.css" />
-		<link rel="stylesheet" type="text/css" href="./style/css/chineseSpelling.css" />
-	</head>
-	<body>
-			<div class="layout header">
-				<div class="logo">
-					<img width="312px" height="115px" src="images/hslogo.png">
+
+<head>
+	<meta charset="utf-8">
+	<title>该拼写啦</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" />
+	<!-- <link rel="stylesheet" href="https://getbootstrap.com/docs/4.4/scss/_popover.scss" /> -->
+
+	<link rel="stylesheet" type="text/css" href="./style/css/basis.css" />
+	<link rel="stylesheet" type="text/css" href="./style/css/spelling.css" />
+</head>
+
+<body>
+	<div class="layout header">
+		<div class="logo">
+			<img width="312px" height="115px" src="images/hslogo.png">
+		</div>
+		<div class="self-situation">
+			<span class="self-ask">
+				李善璇，今天乐学了吗？
+			</span>
+			<div class="medal">
+				<img width="20px" height="24px" src="images/u17.png">
+				<span class="medal-num">
+					✖️19
+				</span>
+			</div>
+		</div>
+		<button type="button" class="btn btn-secondary user-icon" data-container="body" data-toggle="popover"
+			data-placement="bottom" data-content="你有19个小星星 " data-title="李善璇">
+			<svg class="bi bi-people" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd"
+					d="M17 16s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.995-.944v-.002zM9.022 15h7.956a.274.274 0 00.014-.002l.008-.002c-.002-.264-.167-1.03-.76-1.72C15.688 12.629 14.718 12 13 12c-1.717 0-2.687.63-3.24 1.276-.593.69-.759 1.457-.76 1.72a1.05 1.05 0 00.022.004zm7.973.056v-.002zM13 9a2 2 0 100-4 2 2 0 000 4zm3-2a3 3 0 11-6 0 3 3 0 016 0zm-7.064 4.28a5.873 5.873 0 00-1.23-.247A7.334 7.334 0 007 11c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 017 15c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM6.92 12c-1.668.02-2.615.64-3.16 1.276C3.163 13.97 3 14.739 3 15h3c0-1.045.323-2.086.92-3zM3.5 7.5a3 3 0 116 0 3 3 0 01-6 0zm3-2a2 2 0 100 4 2 2 0 000-4z"
+					clip-rule="evenodd"></path>
+			</svg>
+		</button>
+
+
+	</div>
+	<div class="layout main">
+		<div class="review-bar">
+			<img src="images/clock.png" height="100px">
+			<div class="review-remind">
+				<div class="review-what">
+					<b>语文 第7单元生字词</b>
 				</div>
-				<div class="self-situation">
-					<span class="self-ask">
-						李善璇，今天乐学了吗？
+				<div class="review-tip">
+					请用手机打开手写板练习
+				</div>
+			</div>
+			<div class="review-button">
+				<button type="button" class="review-again">
+					<span class="text">
+						下一项：语文单元测试
 					</span>
-					<div class="medal">
-						<img width="20px" height="24px" src="images/u17.png" style="float: left;">
-						<span class="medal-num">
-							✖️19
+					<span class="icon-right">
+						<svg class="bi bi-chevron-right" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor"
+							xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+								d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"
+								clip-rule="evenodd"></path>
+						</svg>
+					</span>
+				</button>
+			</div>
+		</div>
+		<div class="main-content">
+			<div class="exwords-bar">
+				<div class="exwords-remind">
+					<div class="next-word">
+						下一个词：
+						<b>英雄</b>
+					</div>
+				</div>
+				<div class="exwords-remind">
+					<div class="precent-word">
+						<b>教师</b>
+					</div>
+				</div>
+				<div class="exwords-remind">
+					<div class="last-word">
+						上一个词：
+						<b>少年</b>
+					</div>
+				</div>
+				<div class="exwords-remind">
+				</div>
+			</div>
+			<div class="characters">
+				<div class="characters-card">
+					<div class="big-character">
+						<div class="big-pronounce">
+							<b>jiao</b>
+						</div>
+						<img src="images/13E7A003-949E-49AC-872E-3E7E106FD752.png" width="500px" height="500px">
+					</div>
+					<div class="small-character">
+						<div class="small-pronounce">
+							<b>shi</b>
+						</div>
+						<img src="images/QQ20191125-1.png" width="300px" height="300px">
+					</div>
+				</div>
+				<div class="explanation">
+					<div class="basic-explanation">
+						<span><b>基本释义</b></span>
+						<span id="basic-content">
+							担任教学工作的专业人员：人民～。
+						</span>
+					</div>
+					<div class="synonym">
+						<span><b>近义词</b></span>
+						<span id="basic-content">
+							西席 先生 老师 教员 西宾 教授 教练
+						</span>
+					</div>
+					<div class="antonym">
+						<span><b>反义词</b></span>
+						<span id="antonym-content">
+							学生
+						</span>
+					</div>
+					<div class="other-pronounciation">
+						<span><b>其他发音</b></span>
+						<span id="other-pronounciation-content">
+						</span>
+					</div>
+					<div class="similar-form">
+						<span><b>形近字</b></span>
+						<span id="similar-form-content">
+						</span>
+					</div>
+					<div class="homophone">
+						<span><b>同音字</b></span>
+						<span id="homophone-content">
 						</span>
 					</div>
 				</div>
-			</div>
-			<div class="layout main">
-				<div class="review-bar">
-						<img src="images/clock.png" width="100px" height="100px" style="float: left;padding: 10px  10px 10px 30px;">
-					<div class="review-remind">
-						<div class="review-what">
-							<b>语文 第7单元生字词</b>
-						</div>
-						<div class="review-tip">
-							请用手机打开手写板练习
-						</div>
-					</div>
-					<div class="review-button">
-						<button type="button" class="review-again">
-							下一项：语文单元测试
-						</button>
-					</div>
+				<div class="dictionary-logo" style="float: left; padding: 10px;">
+					<img src="images/5E888E0D-1160-45E4-B42B-73DC8EF28D67.png" width="80px" height="80px">
 				</div>
-					<div class="main-content">
-						<div class="exwords-bar">
-							<div class="exwords-remind">
-									<div class="next-word">
-										下一个词：
-										<b>英雄</b>
-									</div>
-							</div>
-							<div class="exwords-remind">
-								<div class="precent-word">
-									<b>教师</b>
-								</div>
-							</div>
-							<div class="exwords-remind">
-								<div class="last-word">
-									上一个词：
-									<b>少年</b>
-								</div>
-							</div>
-							<div class="exwords-remind">
-							</div>
-							</div>
-						<div class="characters">
-							<div class="characters-card">
-								<div class="big-character">
-									<div class="big-pronounce">
-										<b>jiao</b>
-									</div>
-									<img src="images/13E7A003-949E-49AC-872E-3E7E106FD752.png" width="500px" height="500px">
-								</div>
-								<div class="small-character">
-									<div class="small-pronounce">
-										<b>shi</b>
-									</div>
-									<img src="images/QQ20191125-1.png" width="300px" height="300px">
-								</div>
-							</div>
-							<div class="explanation">
-								<div class="basic-explanation">
-									<span><b>基本释义</b></span>
-									<span id="basic-content">
-										担任教学工作的专业人员：人民～。
-									</span>
-								</div>
-								<div class="synonym">
-									<span><b>近义词</b></span>
-									<span id="basic-content">
-										西席 先生 老师 教员 西宾 教授 教练
-									</span>
-								</div>
-								<div class="antonym">
-									<span><b>反义词</b></span>
-									<span id="antonym-content">
-										学生
-									</span>
-								</div>
-								<div class="other-pronounciation">
-									<span><b>其他发音</b></span>
-									<span id="other-pronounciation-content">
-									</span>
-								</div>
-								<div class="similar-form">
-									<span><b>形近字</b></span>
-									<span id="similar-form-content">
-									</span>
-								</div>
-								<div class="homophone">
-									<span><b>同音字</b></span>
-									<span id="homophone-content">
-									</span>
-								</div>
-							</div>
-							<div class="dictionary-logo" style="float: left; padding: 10px;">
-								<img src="images/5E888E0D-1160-45E4-B42B-73DC8EF28D67.png" width="80px" height="80px">
-							</div>
-						</div>
-						</div>
-					</div>
-			</div>		
-	</body>
+			</div>
+		</div>
+	</div>
+	</div>
+	<script src="js/jquery.js"></script>
+
+	<script src="https://getbootstrap.com/docs/4.4/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+	<script>
+		$(function () {
+			$('[data-toggle="popover"]').popover({
+				animation: false,
+				template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>'
+			})
+		})
+	</script>
+</body>
+
 </html>
