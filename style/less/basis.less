@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    color: #000;
+    font-family: 'lucida Grande', Verdana, 'Microsoft YaHei';
+    font-size: 16px;
+    background: #fff;
+    text-align: center;
+    min-width: 400px;
+    margin: 0;
+}
+
+a {
+    font-size: 16px;
+    color: @mainOrange;
+    text-decoration: none;
+
+    &:hover {
+        color: @mainOrangeDarker;
+    }
+}
+
+.layout {
+    width: 90%;
+    margin: auto;
+}
+
+.header {
+    overflow: hidden;
+}
+.main{
+    overflow: hidden;
+}
+.header .logo {
+    float: left;
+    padding: 25px 0 17px;
+    margin: 0;
+}
+.self-situation {
+    float: right;
+    padding: 60px 100px 74px 0;
+}
+.medal {
+    padding: 20px 10px 0 30px;
+}
+.medal-num {
+    padding: 0 0 0 20px;
+    float: left;
+}
+
+.purpose {
+    font-size: 30px;
+    color: #5f9ea0;
+}
+
+.purpose-box {
+    float: right;
+    padding-top: 55px;
+}
+
+.pet {
+    float: right;
+}
+
+.review-bar {
+    height: 120px;
+    background: #307cce;
+    border-radius: 10px;
+}
+.review-remind {
+    width: 40%;
+    float: left;
+    padding: 23px 0 18px 23px;
+    color: #ffffff;
+}
+
+.review-what {
+    font-size: 25px;
+    font-weight: 300;
+    float: left;
+}
+.review-tip {
+    padding: 10px 0 0;
+    float: left;
+    font-size: 16px;
+}
+.review-button {
+    width: 30%;
+    float: left;
+    padding: 30px 0px 30px 0;
+}
+.review-again {
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    color: #fff;
+    background: #88bc00;
+    font-size: 15px;
+}
+.exwords-button button {
+    height: 40px;
+    width: 120px;
+    border: #000 solid 1px;
+    background: #fff;
+    border-radius: 15px;
+    font-size: 20px;
+    color: #000;
+}
+
+.clear {
+    clear: both;
+}
+
+@media screen and(min-width: 321px) and(max-width: 375px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+@media screen and(min-width: 376px) and(max-width: 414px) {
+    html {
+        font-size: 12px;
+    }
+}
+@media screen and(min-width: 415px) and(max-width: 639px) {
+    html {
+        font-size: 15px;
+    }
+}
+@media screen and(min-width: 640px) and(max-width: 719px) {
+    html {
+        font-size: 20px;
+    }
+}
+@media screen and(min-width: 720px) and(max-width: 749px) {
+    html {
+        font-size: 22.5px;
+    }
+}
+@media screen and(min-width: 750px) and(max-width: 799px) {
+    html {
+        font-size: 23.5px;
+    }
+}

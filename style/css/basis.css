@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+	color: #000;
+	font-family: "lucida Grande", Verdana, "Microsoft YaHei";
+	font-size: 15px;
+	background: #fff;
+	text-align: center;
+	min-width: 1100px;
+	margin: 0;
+}
+.header{
+	padding: 0px 100px 0 100px;
+	height:200px;
+}
+.header .logo{
+	float: left;
+	padding: 25px 0px 17px 0px;
+	margin: 0;
+}
+.selfSituation{
+	float: right;
+	padding: 60px 100px 74px 0;
+}
+.medal{
+	padding: 20px 10px 0 30px;
+}
+.medalNum{
+	padding: 0 0 0 20px;
+	float: left;
+}
+.main{
+	margin: 0 100px 0 100px;
+}
+.purpose{
+	font-size: 30px;
+	color: #5F9EA0;
+}
+.purposeBox{
+	float: right;
+	padding: 55px 70px ;
+}
+.pet{
+	float: right;
+}
+.reviewBar{
+	height: 120px;
+	background: deepskyblue;
+	border-radius: 10px;
+}
+.reviewRemind{
+	float: left;
+	padding: 23px 0 18px 23px;
+	color: #FFFFFF;
+}
+.reviewWhat{
+	font-size: 25px;
+	font-weight: 300;
+}
+.reviwTip{
+	padding: 10px 0 0 0;
+	float: left;
+	font-size: 16px;
+}
+.reviewButton{
+	float: right;
+	padding: 30px 100px 30px 0;
+}
+.reviewAgain{
+	width: 200px;
+	height: 60px;
+	border-radius: 10px;
+	color: #FFFFFF;
+	background: #2E8B57;
+	font-size: 15px;
+}
