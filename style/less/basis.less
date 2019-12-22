@@ -12,7 +12,6 @@ body {
     font-size: 16px;
     background: #fff;
     // text-align: center;
-    min-width: 400px;
     margin: 0;
 }
 
@@ -54,6 +53,7 @@ a {
     .self-situation {
         float: right;
         margin-top: 50px;
+        padding: 0;
     }
 
     .medal {
@@ -80,16 +80,9 @@ a {
         margin: 0;
     }
 }
-
-
-.pet {
-    float: right;
-}
-
 .main {
-    overflow: hidden;
     min-width: 500px;
-
+    overflow: hidden;
     .review-bar {
         height: 120px;
         background: #307cce;
@@ -100,7 +93,7 @@ a {
         }
         .review-remind {
             width: 40%;
-            padding: 23px 0 18px 23px;
+            margin-top: 20px;
             color: #ffffff;
             min-width: 260px;
             float: left;
@@ -111,7 +104,6 @@ a {
             }
 
             .review-tip {
-                padding: 10px 0 0;
                 font-size: 16px;
             }
         }
@@ -145,22 +137,50 @@ a {
     }
 
 
-    .exwords-button button {
-        height: 40px;
-        width: 120px;
-        border: #000 solid 1px;
-        background: #fff;
-        border-radius: 15px;
-        font-size: 20px;
-        color: #000;
+    .exwords-button {
+        display: flex;
+        width: 100%;
+        margin-top: 40px;
+        button {
+            height: 40px;
+            width: 120px;
+            border: #000 solid 1px;
+            background: #fff;
+            border-radius: 15px;
+            font-size: 20px;
+            color: #000;
+            margin-right: 10px;
+            outline: none;
+            
+        }
+        button:hover{
+            background-color: @mainOrange;
+            color: white;
+            border: #fff;
+        }
     }
+    
 
     .clear {
         clear: both;
     }
 }
 
+.words-box {
+    display: flex;
 
+    .word {
+        text-align: center;
+        width: 150px;
+        height: 50px;
+        box-sizing: border-box;
+        margin: 0 10px;
+        border: 1px #000000 solid;
+        border-radius: 5px;
+        font-size: 25px;
+        line-height: 50px;
+    }
+}
 @media(max-width: 767px) {
     .header {
         .user-icon {
@@ -196,7 +216,14 @@ a {
             }
         }
     }
-
+}
+@media(max-width:827px){
+    .review-what b{
+        font-size: 20px;
+    }
+    .review-tip b{
+        font-size: 13px;
+    }
 }
 
 @media(min-width: 500px) {

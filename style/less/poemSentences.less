@@ -1,30 +1,32 @@
-@import './basis.less';
 @import './common.less';
-.poem-header{
-    height: 60px;
-    width: 900px;
-    padding: 20px 0 0 0;
-    float: left;
-    .title{
-        font-size: 25px;
-        float: left;
+.poem{
+    margin-top: 30px;
+    .poem-header{
+        .title{
+            font-size: 25px;
+        }
+        .author{
+            margin-top: 5px;
+        }
     }
-    .author{
-        float: left;
+    .poem-content{
+        display: flex;
+        .content-main{
+            .sentence{
+                font-size: 40px;
+                font-family: '楷体';
+                .note{
+                    color: #999999;
+                    font-size: 20px;
+                }
+            }
+        }
     }
-}
-.poem-content{
-    height: 600px;
-    width: 900px;
-    float: left;
-    .sentence{
-        float: left;
-        font-size: 40px;
-        font-family: '楷体';
-        .note{
-            float: left;
-            color: #999999;
-            font-size: 20px;
+    .poem-image{
+        margin-top: 20px;
+        img{
+            width: 80%;
+            height: 40%;
         }
     }
 }
