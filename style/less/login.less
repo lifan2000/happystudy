@@ -48,9 +48,13 @@
                     top: -12%;
                     left: -12%;
                     z-index: 10;
-                    border: 0.5em solid @mainOrange;
+                    border: 3px solid @mainOrange;
                     animation: zoomIn 1s;
                 }
+            }
+
+            &.selected {
+                border: 3px solid @mainGreen;
             }
 
             img {
@@ -71,10 +75,9 @@
 
     }
 }
-.form-control{
+.form-control {
     margin: 10px 0;
 }
-
 
 
 // @media screen and(max-width: 980px) {

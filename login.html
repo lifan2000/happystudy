@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<script src="js/jquery.js"></script>
@@ -75,7 +76,7 @@
 
 		<!-- login by password -->
 		<div id="login-by-password" class="password">
-			<form class="form-signin">
+			<form class="form-signin" action="practiceHome.html">
 				<label for="inputEmail" class="sr-only">用户名</label>
 				<input type="email" id="inputEmail" class="form-control" placeholder="邮箱地址" required="" autofocus="">
 				<label for="inputPassword" class="sr-only">密码</label>
@@ -85,13 +86,27 @@
 						<input type="checkbox" value="remember-me"> 记住登录
 					</label>
 				</div>
-				<button class="btn btn-lg btn-primary btn-block" type="submit"style="background-color:darkorange;border-color:darkorange">登录</button>				
+				<button class="btn btn-lg btn-primary btn-block" type="submit"
+					style="background-color:darkorange;border-color:darkorange">登录</button>
 			</form>
 		</div>
 		<div class="clear"></div>
 
 	</div>
 	<!-- </div> -->
+	<script>
+		$('#login-by-image li').off('click').on('click', function () {
+			var selectedList = $('li.selected');
+			if (selectedList.length < 2) {
+				$(this).toggleClass('selected');
+			} else {
+				selectedList.filter((index) => index < selectedList.length - 2).removeClass('selected')
+				window.location = "practiceHome.html"
+			}
+
+			return false;
+		})
+	</script>
 </body>
 
 </html>
