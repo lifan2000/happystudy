@@ -1,0 +1,122 @@
+@import './common.less';
+
+.login {
+    padding: 40px 0 15px;
+    .way {
+        height: 40px;
+        .help {
+            float: left;
+            line-height: 30px;
+            // padding: 10px 0 15px 0;
+            color: dimgray;
+        }
+        .method {
+            float: right;
+            // padding: 0 0 15px 0px;
+            font-size: 20px;
+            color: @mainGray;
+            line-height: 30px;
+
+            a {
+                &.on {
+                    color: @mainOrangeDarker;
+                }
+            }
+        }
+    }
+
+
+    .images {
+        padding: 10px 0 0;
+        // overflow: hidden;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            flex: 1 1 109px;
+            list-style: none;
+            border: 1px solid transparent;
+            position: relative;
+
+            &:hover {
+                // border: 1px solid @mainOrange;
+                img {
+                    position: absolute;
+                    width: 120%;
+                    height: 120%;
+                    top: -12%;
+                    left: -12%;
+                    z-index: 10;
+                    border: 0.5em solid @mainOrange;
+                    animation: zoomIn 1s;
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+
+    .password {
+        display: none;
+        .form-signin {
+            width: 100%;
+            max-width: 797px;
+            margin: auto;
+        }
+
+    }
+}
+.form-control{
+    margin: 10px 0;
+}
+
+
+
+// @media screen and(max-width: 980px) {
+//     .login-password-image-list {
+//         padding: 10px 0 0;
+//         li {
+//             list-style: none;
+//             float: left;
+//             width: 150px;
+//             height: 150px;
+//             img {
+//                 width: 100%;
+//                 height: 100%;
+//             }
+//         }
+//     }
+// }
+
+// @media(max-width: 1199) {
+//     ;
+//     // <=1199的设备
+// }
+
+// @media(max-width: 991px) {
+//     ;
+//     // <=991的设备 }
+// }
+@media(max-width: 767px) {
+    .login {
+        .way {
+            .help {
+                display: none;
+            }
+            .method {
+                text-align: left;
+            }
+        }
+    }
+
+
+    // <=768的设备
+    .purpose-box {
+        display: none;
+    }
+}

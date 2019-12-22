@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>一起看电影造句吧：）</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="./style/css/basis.css" rel="stylesheet" type="text/css" />
+	<link href="./style/css/camerasWatch.css" rel="stylesheet" type="text/css" />
+	<script src="js/jquery.js"></script>
+	<script crossorigin="anonymous" src="https://getbootstrap.com/docs/4.4/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+		$(function () {
+			$('[data-toggle="popover"]').popover({
+				animation: false,
+				template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>'
+			})
+		})
+	</script>
+</head>
+
+<body>
+	<div class="layout header">
+		<div class="logo">
+			<img height="115px" src="images/hslogo.png" width="312px">
+		</div>
+		<div class="self-situation">
+			<span class="self-ask">
+				李善璇，今天乐学了吗？
+			</span>
+			<div class="medal">
+				<img height="24px" src="images/u17.png" width="20px">
+				<span class="medal-num">
+					✖️19
+				</span>
+			</div>
+		</div>
+		<button class="btn btn-secondary user-icon" data-container="body" data-content="你有19个小星星 "
+			data-placement="bottom" data-title="李善璇" data-toggle="popover" type="button">
+			<svg class="bi bi-people" fill="currentColor" height="1em" viewbox="0 0 20 20" width="1em"
+				xmlns="http://www.w3.org/2000/svg">
+				<path clip-rule="evenodd"
+					d="M17 16s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.995-.944v-.002zM9.022 15h7.956a.274.274 0 00.014-.002l.008-.002c-.002-.264-.167-1.03-.76-1.72C15.688 12.629 14.718 12 13 12c-1.717 0-2.687.63-3.24 1.276-.593.69-.759 1.457-.76 1.72a1.05 1.05 0 00.022.004zm7.973.056v-.002zM13 9a2 2 0 100-4 2 2 0 000 4zm3-2a3 3 0 11-6 0 3 3 0 016 0zm-7.064 4.28a5.873 5.873 0 00-1.23-.247A7.334 7.334 0 007 11c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 017 15c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM6.92 12c-1.668.02-2.615.64-3.16 1.276C3.163 13.97 3 14.739 3 15h3c0-1.045.323-2.086.92-3zM3.5 7.5a3 3 0 116 0 3 3 0 01-6 0zm3-2a2 2 0 100 4 2 2 0 000-4z"
+					fill-rule="evenodd"></path>
+			</svg>
+		</button>
+	</div>
+	<div class="layout main">
+		<div class="review-bar">
+			<img height="100px" src="images/clock.png">
+			<div class="review-remind">
+				<div class="review-what">
+					<b>语文 第7单元电影说感想</b>
+				</div>
+				<div class="review-tip">
+					根据你看到的电影，说出你此刻的想法，或者看到的东西，尽量用你第7单元学到的词汇
+				</div>
+			</div>
+			<div class="review-button">
+				<button class="review-again" type="button">
+					<span class="text">
+						下一项：语文单元测试
+					</span>
+					<span class="icon-right">
+						<svg class="bi bi-chevron-right" fill="currentColor" height="1em" viewbox="0 0 20 20"
+							width="1em" xmlns="http://www.w3.org/2000/svg">
+							<path clip-rule="evenodd"
+								d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"
+								fill-rule="evenodd"></path>
+						</svg>
+					</span>
+				</button>
+			</div>
+		</div>
+		<div class="main-content">
+			<div class="movie">
+				<div class="tittle">
+					<b>动画：半斤八两</b>
+				</div>
+				<div class="film">
+					<img src="images/5FD9337D-B324-4A60-A54B-EDA4CAD56609.png" alt="">
+				</div>
+				<div class="words-box">
+					<button class="word">
+						厉害
+					</button>
+					<button class="word">
+						浑身解数
+					</button>
+					<button class="word">
+						悲伤
+					</button>
+					<button class="word">
+						痛苦
+					</button>
+				</div>
+				<div class="examination">
+					<div class="examination-titlle">
+							<b>用你学到的说你看到的 +2</b>
+					</div>
+					<div class="examination-content">
+						<img src="./images/microphone.png" alt="">
+						那个小怪真是厉害，大家使劲湿身解数也搞不定它, 如果能...
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	</div>
+</body>
+
+</html>
